@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back Tracking</title>
-    <style>
-        p.normal{border-style:ridge;}
-    </style>
+    
 </head>
 <body>
     <h1>Backtracking</h1>
@@ -552,7 +550,7 @@
             <br>
             <p>For example , you could make the following sequence of moves</p>
 <center>
-<table>
+<table cellpadding="20">
     <tr>
         <td> <b style="color:black"> Starting position:</b></td>
         <td>
@@ -570,15 +568,10 @@
             
         </table>
         </td>
+    </tr> 
 
-    </tr>
-</table>
-            
-               
-            
-            <table >
                 <tr>
-                    <td> <b style="color:black"> Black moves ahead</b></td>
+                    <td> <b style="color:black"> Black moves ahead:</b></td>
                     <td>
                         <table border="2" cellpadding="20">
                             <tr >
@@ -594,9 +587,6 @@
 
                     </td>
                 </tr>
-            </table>
-                
-            <table>
                 <tr>
                     <td><b style="color:black">white jumps: </b></td>
                     <td>
@@ -614,9 +604,6 @@
                         </table>
                     </td>
                 </tr>
-            </table>
-                
-           <table>
             <tr>
                 <td><b style="color:black">Black moves ahead:</b></td>
                 <td>
@@ -634,9 +621,6 @@
                     </table>
                 </td>
             </tr>
-           </table>
-                
-         <table>
             <tr>
                 <td><b style="color:black">Black jumps</b></td>
                 <td>
@@ -655,9 +639,6 @@
                     </table>
                 </td>
             </tr>
-         </table>
-                
-           <table>
             <tr>
                 <td><b style="color:black"> white moves ahead:</b></td>
                 <td>
@@ -676,14 +657,15 @@
 
                 </td>
             </tr>
-           </table>
                 
             
-            <table>
-           <tr><td> <font color="black"> <b >stuck!</b></font></td>
-            <td></td>
+           <tr>
+            <td >
+                 <font color="black"><b >stuck!</b></font>
+            </td>
            </tr>
             </table>
+            
             </center>
 
             <p> The backtracking method is named  solvable and returns a boolean. In solvable we shall need to check whether we are at a  leaf, which in this case means a postition means a  positoin from which no further moves are possible . This isnt so easy
@@ -752,17 +734,17 @@ boolean solvable(int[] board){
                 <i><font color="blue">14.</font></i><b>   &nbsp WHITE WHITE  _______ BLACK WHITE BLACK BLACK </b><br>
                 <i><font color="blue">13.</font></i><b>  &nbsp WHITE WHITE WHITE _______ WHITE BLACK BLACK </b><br>
                 <i><font color="blue">12.</font></i><b>  &nbsp WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-            <i><font color="blue">11.</font></i><b>  &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">11.</font></i><b>  &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
                 <i><font color="blue">10.</font></i><b>  &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                    <i><font color="blue">9.</font></i><b>  &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                        <i><font color="blue">8.</font></i><b>  &nbsp WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                            <i><font color="blue">7.</font></i><b>  &nbsp WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                                <i><font color="blue">6.</font></i><b> &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                                    <i><font color="blue">5.</font></i><b>   &nbspWHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                                        <i><font color="blue">4.</font></i><b> &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
-                                            <i><font color="blue">3.</font></i><b>   &nbspBLACK BLACK WHITE  BLACK _______ WHITE WHITE WHITE</b><br>
-                                                <i><font color="blue">2.</font></i><b>   &nbspBLACK BLACK  _______ BLACK WHITE WHITE WHITE </b><br>
-                                                    <i><font color="blue">1.</font></i><b>  &nbsp BLACK BLACK BLACK _______ WHITE WHITE WHITE </b><br>
+                <i><font color="blue">9.</font></i><b>  &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">8.</font></i><b>  &nbsp WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">7.</font></i><b>  &nbsp WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">6.</font></i><b> &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">5.</font></i><b>   &nbspWHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">4.</font></i><b> &nbsp  WHITE WHITE WHITE _______ BLACK BLACK BLACK </b><br>
+                <i><font color="blue">3.</font></i><b>   &nbspBLACK BLACK WHITE  BLACK _______ WHITE WHITE WHITE</b><br>
+                <i><font color="blue">2.</font></i><b>   &nbspBLACK BLACK  _______ BLACK WHITE WHITE WHITE </b><br>
+                <i><font color="blue">1.</font></i><b>  &nbsp BLACK BLACK BLACK _______ WHITE WHITE WHITE </b><br>
             
             
 
